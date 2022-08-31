@@ -1,0 +1,98 @@
+.footer {
+    margin-top: 74px;
+    background-color: #b69046;
+
+    &-header {
+        display: flex;
+        padding: 9px 0 11px 0;
+        background-color: #002a3a;
+        color: white;
+        font-family: $font-Poppins;
+        font-weight: var(--fw-600);
+        font-size: var(--fz-12);
+        line-height: 1.2;
+        letter-spacing: 0.47px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        &__item {
+            margin-left: 32px;
+
+            & :first-child {
+                margin-left: 0;
+            }
+        }
+
+        &__item:first-child {
+            margin-left: 0;
+        }
+
+        &__phone {
+            display: flex;
+            padding: 13px 20.5px;
+            margin-left: 32px;
+            column-gap: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            font-family: $font-Poppins;
+            font-weight: var(--fw-600);
+            font-size: var(--fz-12);
+            border-radius: 3px;
+        }
+    }
+    .line {
+        width: 2px;
+        height: 21px;
+        margin: 0 15px;
+        background-color: #d8d8d8;
+    }
+
+    &-contact {
+        &__link {
+            display: flex;
+            margin-top: 66.25px;
+            background-color: #b69046;
+            color: white;
+            font-size: 28px;
+            column-gap: 49px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__info {
+            display: flex;
+            margin-top: 51px;
+            color: $white;
+            text-transform: capitalize;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__list {
+            color: $white;
+            font-family: $font-Poppins;
+            font-style: normal;
+            font-weight: var(--fw-400);
+            font-size: var(--fz-14);
+            line-height: 21px;
+            text-align: center;
+        }
+    }
+
+    &-line {
+        width: 2px;
+        height: 21px;
+        margin: 0 51px;
+        background-color: #d8d8d8;
+        text-align: center;
+    }
+
+    &-bottom {
+        padding-bottom: 15px;
+        margin-top: 61px;
+        font-family: 'Source Sans Pro';
+        text-align: center;
+        color: $white;
+        opacity: 0.5;
+    }
+}

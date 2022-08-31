@@ -1,0 +1,37 @@
+@use "sass:math";
+
+$width-container:math.div(1184px, 1440px)*100%;
+
+:root {
+
+    //font size
+    --fz-12: 12px;
+    --fz-14: 14px;
+    --fz-15: 15px ;
+    --fz-16: 16px;
+    --fz-18: 18px;
+    --fz-32: 32px;
+    --fz-36: 36px;
+    --fz-40: 40px;
+    --fz-48: 48px ;
+
+    //font weight
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    }
+    
+    
+
+// font-family
+$font-Roboto: "Roboto", sans-serif;
+$font-Montserrat: "Montserrat", sans-serif;
+$font-Poppins: "Poppins", sans-serif;
+
+// color
+$black: #000000;
+$white: #ffffff;
+$color-heading: #001A31;
+

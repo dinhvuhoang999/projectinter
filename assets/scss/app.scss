@@ -1,0 +1,19 @@
+//  sass ./assets/scss/app.scss ./assets/css/app.css --watch
+
+@import "reset";
+
+@import "variables";
+
+@import "global";
+
+@import 'header';
+
+@import 'product';
+
+@import 'productContent';
+
+@import 'accessories';
+
+@import 'otherCollection';
+
+@import 'footer';

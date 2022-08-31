@@ -1,0 +1,40 @@
+// @use "sass:math";
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    
+   
+}
+
+.container {
+    max-width: 1186px;
+    margin: 0 auto;
+    width: $width-container;
+    height: auto;
+}
+
+.container-content{
+    max-width: 785px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.footer-container {
+    max-width: 854px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+// .box-shadow{
+//     box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 30%);
+// }
+
+main {
+    padding-top: 102px;
+}
