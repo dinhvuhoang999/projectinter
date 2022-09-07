@@ -31,14 +31,14 @@ function topFunction() {
 
 
 // Slide
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 12,
     slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper(".mySwiper2", {
+  let swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     spaceBetween: 10,
     navigation: {
@@ -53,7 +53,7 @@ var swiper = new Swiper(".mySwiper", {
 // Tab
 
 function openTab(evt, tabName) {
-  var i, x, tablinks;
+  let i, x, tablinks;
   x = document.getElementsByClassName("dtl");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -76,11 +76,11 @@ function decrement() {
 }
 
 // responsive menu 
-var icon = document.getElementById("icon");
-var icon1 = document.getElementById("a");
-var icon2 = document.getElementById("b");
-var icon3 = document.getElementById("c");
-var nav = document.getElementById('nav');
+let icon = document.getElementById("icon");
+let icon1 = document.getElementById("a");
+let icon2 = document.getElementById("b");
+let icon3 = document.getElementById("c");
+let nav = document.getElementById('nav');
 
 icon.addEventListener('click', function() {
   icon1.classList.toggle('a');

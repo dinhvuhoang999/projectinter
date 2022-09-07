@@ -268,13 +268,26 @@
                 color: #cb9d37;
                 background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
                     linear-gradient(to right, rgba(204, 159, 58, 1), rgba(235, 207, 130, 1)) border-box;
+
+                    &:hover{
+                        border: 2px solid;
+                        transition: 0.5s ease-out;
+                        color: #FFFFFF;
+                        background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
+                    }
             }
 
             &__order {
                 padding: 13px 77px;
-
                 color: var(--color-white);
                 background: linear-gradient(to right, #957327, #dfc47a);
+                &:hover{
+                    border: 2px solid;
+                    border-color: linear-gradient(#CC9F3A 100%, #EBCF82 100%);
+                    transition: 0.5s ease-out;
+                    color: #CB9D37;
+                    background: #F5F5F5;
+                }
             }
         }
 
@@ -286,7 +299,6 @@
             color: var(--color-2);
             font-family: $font-Poppins;
             font-size: var(--fz-15);
-            line-height: 1.6;
 
             & p span {
                 font-weight: var(--fw-700);
