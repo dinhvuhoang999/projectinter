@@ -1,22 +1,36 @@
+// Header 
 const scroll = document.getElementsByTagName('header');
 const logo = document.getElementsByClassName('logo')
 
 window.onscroll = function() {
     if (window.scrollY >= 70 ) {
         logo[0].classList.add('logo-scroll')
-        console.log(logo);
         scroll[0].classList.add('scroll','bowshadow' )
-        console.log(scroll);
     }
     else {
         logo[0].classList.remove('logo-scroll')
         scroll[0].classList.remove('scroll','bowshadow')
     }
+    scrollFunction()
+}
+
+// Scroll tab bar 
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("btnScroll").style.display = "flex";
+    } else {
+        document.getElementById("btnScroll").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
-// Slider
-
+// Slide
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 12,
@@ -60,3 +74,26 @@ function increment() {
 function decrement() {
   document.getElementById('demoInput').stepDown();
 }
+
+// responsive menu 
+var icon = document.getElementById("icon");
+var icon1 = document.getElementById("a");
+var icon2 = document.getElementById("b");
+var icon3 = document.getElementById("c");
+var nav = document.getElementById('nav');
+
+icon.addEventListener('click', function() {
+  icon1.classList.toggle('a');
+  icon2.classList.toggle('c');
+  icon3.classList.toggle('b');
+  nav.classList.toggle('nav-bar');
+});
+
+// Scroll bar top
+
+
+
+
+
+
+

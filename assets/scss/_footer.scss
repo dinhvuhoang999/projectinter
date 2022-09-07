@@ -5,8 +5,8 @@
     &-header {
         display: flex;
         padding: 9px 0 11px 0;
-        background-color: #002a3a;
-        color: white;
+        background-color: var(--color-1);
+        color:var(--color-white);
         font-family: $font-Poppins;
         font-weight: var(--fw-600);
         font-size: var(--fz-12);
@@ -52,7 +52,7 @@
             display: flex;
             margin-top: 66.25px;
             background-color: #b69046;
-            color: white;
+            color: var(--color-white);
             font-size: 28px;
             column-gap: 49px;
             justify-content: center;
@@ -62,14 +62,14 @@
         &__info {
             display: flex;
             margin-top: 51px;
-            color: $white;
+            color: var(--color-white);
             text-transform: capitalize;
             justify-content: center;
             align-items: center;
         }
 
         &__list {
-            color: $white;
+            color: var(--color-white);
             font-family: $font-Poppins;
             font-style: normal;
             font-weight: var(--fw-400);
@@ -92,7 +92,8 @@
         margin-top: 61px;
         font-family: 'Source Sans Pro';
         text-align: center;
-        color: $white;
+        color: var(--color-white);
         opacity: 0.5;
     }
 }
+

@@ -1,8 +1,9 @@
 .accessories {
     padding-top: 106px;
+
     &-heading {
         margin-bottom: 28px;
-        color: $color-heading;
+        color: var(--color-2);
         font-family: $font-Roboto;
         font-weight: var(--fw-700);
         font-size: var(--fz-36);
@@ -13,25 +14,26 @@
 
     &-wrapper {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     &-card {
         display: flex;
-        // width: 585px;
-        // height: 370px;
-        margin-left: 15px;
+        width: calc((100% - 15px) / 2);
+       padding: 47px 0;
         position: relative;
         background-color: #FAFAFA;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        &__img {
-            margin: 47px 270px 0 270px;
-            width: 44.79px;
+        &__aside {
             height: 120px;
+        }
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         &__title,
@@ -41,7 +43,7 @@
         }
 
         &__title {
-            color: $color-heading;
+            color: var(--color-2);
             font-family: $font-Poppins;
             font-weight: var(--fw-700);
             font-size: var(--fz-18);
@@ -59,7 +61,6 @@
         &__btn {
             padding: 12px;
             margin-top: 55px;
-            margin-bottom: 48px;
             background: none;
             color: #CB9D37;
             font-family: $font-Poppins;
@@ -70,14 +71,11 @@
         }
 
         &__btn:hover {
-            color: $white;
+            color: var(--color-white);
             background-color: #CB9D37;
             border-radius: 99px;
+            
             transition: all 0.2s;
         }
-    }
-
-    &-card:first-child {
-        margin-left: 0;
     }
 }

@@ -27,37 +27,45 @@
 
     <!-- Link css -->
     <link rel="stylesheet" href="./assets/css/app.css">
-    <title>Product-detail</title>
+    <title>Product Detail</title>
 </head>
 
 <body>
     <div class="wrapper">
+
         <header class="header">
-            <div class="container">
+            <div class="hamburger-icon" id="icon">
+                <div class="icon-1" id="a"></div>
+                <div class="icon-2" id="b"></div>
+                <div class="icon-3" id="c"></div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="container-header">
                 <div class="header-menu">
                     <div class="logo">
                         <img class="logo-img" src="./assets/img/Logo.png" alt="logo">
                     </div>
 
-                    <nav class="header-nav">
+                    <nav id="nav" class="header-nav">
                         <ul class="header-nav-list">
-                            <li class="header-nav__item"><a href="">about us</a></li>
+                            <li class="header-nav__item"><a href="">About us</a></li>
 
-                            <li class="header-nav__item"><a href="">brands</a></li>
+                            <li class="header-nav__item"><a href="">Brands</a></li>
 
-                            <li class="header-nav__item"><a href="">news</a></li>
+                            <li class="header-nav__item"><a href="">News</a></li>
 
-                            <li class="header-nav__item"><a href="">dealer</a></li>
+                            <li class="header-nav__item"><a href="">Dealers</a></li>
 
-                            <li class="header-nav__item"><a href="">customer services</a></li>
+                            <li class="header-nav__item"><a href="">Customer Service</a></li>
 
-                            <li class="header-nav__item"><a href="">contact us</a></li>
+                            <li class="header-nav__item"><a href="">Contact Us</a></li>
                         </ul>
 
                         <span class="line"></span>
 
                         <ul class="header-nav-list">
-                            <li class="header-nav__item"><a href="">my cart<span class="cart-quantity">3</span></a></li>
+                            <li class="header-nav__item"><a href="">My Cart<span class="cart-quantity">3</span></a></li>
 
                             <li class="header-nav__item">
                                 <img src="./assets/img/image 26.png" alt="">
@@ -73,81 +81,78 @@
         <main>
             <!-- Product -->
 
+
             <section class="product">
-                <div class="product-container">
-                    <div class="product-wrapper">
-                        <div class="product-swiper">
-                            <div class="swiper mySwiper2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img" src="./assets/img/Hi.png" />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img"
-                                            src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img"
-                                            src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img"
-                                            src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img"
-                                            src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img class="swiper-slide-img"
-                                            src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-
-                                <div class="swiper-button-prev"></div>
+                <div class="product_wrapper active1">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="./assets/img/Hi.png" />
                             </div>
 
-                            <div thumbsSlider="" class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide slide-view">
-                                        <img src="./assets/img/Hi.png" />
-                                    </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
 
-                                    <div class="swiper-slide slide-view">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                    </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
 
-                                    <div class="swiper-slide slide-view">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                    </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
 
-                                    <div class="swiper-slide slide-view">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                    </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
 
-                                    <div class="swiper-slide slide-view">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                    </div>
-
-                                    <div class="swiper-slide slide-view">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                    </div>
-                                </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="https://swiperjs.com/demos/images/nature-5.jpg" />
                             </div>
                         </div>
 
-                        <div class="product-desc">
-                            <h1 class="product-desc__heading">XOR Titanium Collection</h1>
+                        <div class="swiper-button-next"></div>
 
-                            <h4>đ 99,000,000</h4>
+                        <div class="swiper-button-prev"></div>
+                    </div>
 
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-view">
+                                <img src="./assets/img/Hi.png" />
+                            </div>
+
+                            <div class="swiper-slide slide-view">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+
+                            <div class="swiper-slide slide-view">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+
+                            <div class="swiper-slide slide-view">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+
+                            <div class="swiper-slide slide-view">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+
+                            <div class="swiper-slide slide-view">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-desc">
+                    <div class="product-desc__content">
+                        <div class="product-desc__top">
+                            <h3 class="product-desc__title">XOR Titanium Collection</h3>
+                            <p class="product-desc__price">
+                                đ 99,000,000
+                            </p>
                             <div class="product-desc-type">
                                 <a class="product-desc-type__item">Classic</a>
 
@@ -156,9 +161,11 @@
                                 <a class="product-desc-type__item">Rose</a>
                             </div>
 
-                            <div class="product-desc-count">
-                                <span>Quantity</span>
+                        </div>
 
+                        <div class="product-desc__mid">
+                            <div class="product-desc__quantity">
+                                <span>Quantity</span>
                                 <div class="product-desc-count__input_group">
                                     <button type="button" onclick="decrement()" class="button-minus">-</button>
 
@@ -174,33 +181,28 @@
                                 <button class="product-desc__btn__order btn">Oder now</button>
                             </div>
 
-                            <div class="product-desc-text">
-                                <p> Titanium Classic,
-                                    <span> 
-                                        understated and chic, is the perfect companion for any occasion.
-                                    </span>
+
+                        </div>
+
+                        <div class="product-desc__bottom">
+                            <div class="product-desc__text">
+                                <p><span>Titanium Classic</span>, understated and chic, is the perfect companion for any
+                                    occasion.
                                 </p>
 
-                                <br>
-
-                                <p> Titanium Ebony
-                                    <span> 
-                                        in black PVD, elevates the sense of mystery to the next level.
-                                    </span>
+                                <p><span>Titanium Ebony</span> in black PVD, elevates the sense of mystery to the next
+                                    level.
                                 </p>
 
-                                <br>
-
-                                <p>Titanium Rose
-                                    <span> 
-                                        with soft colours is the perfect phone for the confident sophisticate.
-                                    </span>
+                                <p><span>Titanium Rose</span> with soft colours is the perfect phone for the confident
+                                    sophisticate.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <!-- Tab  -->
 
@@ -381,8 +383,8 @@
 
                     <div class="accessories-wrapper">
                         <div class="accessories-card">
-                            <div class="accessories-card__img">
-                                <img src="./assets/img/Layer 1 1.png"" alt="">
+                            <div class="accessories-card__aside">
+                                <img src="./assets/img/Layer 1 1.png"class="accessories-card__img" alt="">
                             </div>
 
                             <div class=" accessories-card__body">
@@ -397,8 +399,8 @@
                         </div>
 
                         <div class="accessories-card">
-                            <div class="accessories-card__img">
-                                <img src="./assets/img/Group 559.png"" alt="">
+                            <div class="accessories-card__aside">
+                                <img src="./assets/img/Group 559.png" class="accessories-card__img" alt="">
                             </div>
 
                             <div class=" accessories-card__body">
@@ -448,6 +450,20 @@
                 </div>
             </section>
 
+            <section class="contact__floating">
+                <div class="contact__link" onclick="topFunction()" id="btnScroll">
+                    <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                </div>
+    
+                <div class="contact__link">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+                
+                <div class="contact__link">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
@@ -458,7 +474,11 @@
 
                 <span class="line"></span>
 
-                <div>9:00 - 15:00 on Saturday and Sunday</div>
+                <p>9:00 - 15:00 on Saturday and Sunday</p>
+
+                <div class="footer-header__item">
+                    
+                </div>
 
                 <div class="footer-header__phone">
                     <i class="fa-solid fa-phone"></i>
@@ -504,6 +524,8 @@
                 <p class="footer-contact-bottom__text">Copyright informations</p>
             </div>
         </footer>
+
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

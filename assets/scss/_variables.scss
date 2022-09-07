@@ -10,6 +10,7 @@ $width-container:math.div(1184px, 1440px)*100%;
     --fz-15: 15px ;
     --fz-16: 16px;
     --fz-18: 18px;
+    --fz-20: 20px;
     --fz-32: 32px;
     --fz-36: 36px;
     --fz-40: 40px;
@@ -21,7 +22,17 @@ $width-container:math.div(1184px, 1440px)*100%;
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
+
+    
+    //color
+    --color-1: #002A3A;
+    --color-2: #001A31;
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+
     }
+
     
     
 
@@ -29,9 +40,4 @@ $width-container:math.div(1184px, 1440px)*100%;
 $font-Roboto: "Roboto", sans-serif;
 $font-Montserrat: "Montserrat", sans-serif;
 $font-Poppins: "Poppins", sans-serif;
-
-// color
-$black: #000000;
-$white: #ffffff;
-$color-heading: #001A31;
 
