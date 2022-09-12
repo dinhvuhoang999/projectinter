@@ -30,17 +30,17 @@
             max-height: 550px;
         }
 
-        &-desc {
-            &__btn {
-                &__add {
-                    padding: 13px 58px;
-                }
+        // &-desc {
+        // }
+        .btn {
+            min-width: 180px;
+            min-height: 48px;
 
-                &__order {
-                    padding: 13px 64px;
-                }
-            }
+            &__text {
+                padding: 0 10px;
+              }
         }
+
     }
 }
 
@@ -98,20 +98,7 @@
                 }
             }
 
-            &__btn {
-                & button {
-                    font-size: var(--fz-12);
-                    letter-spacing: normal;
-                }
-
-                &__add {
-                    padding: 13px 48px;
-                }
-
-                &__order {
-                    padding: 13px 54px;
-                }
-            }
+          
 
             &__text {
                 font-size: var(--fz-14);
@@ -261,17 +248,17 @@
             max-height: 589px;
         }
 
-        &-desc {
-            &__btn {
-                &__add {
-                    padding: 13px 71px;
-                }
+        // &-desc {
+        //     &__btn {
+        //         &__add {
+        //             padding: 13px 71px;
+        //         }
 
-                &__order {
-                    padding: 13px 77px;
-                }
-            }
-        }
+        //         &__order {
+        //             padding: 13px 77px;
+        //         }
+        //     }
+        // }
     }
 
     .contact__link {
@@ -310,8 +297,6 @@
 
 @media screen and (max-width: 768px) {
 
-    
-
     .product {
         &-desc {
             &__title {
@@ -336,7 +321,7 @@
 
         &-heading {
             margin-bottom: 28px;
-            font-size: var(--fz-32);
+            font-size: var(--fz-30);
         }
 
         &-wrapper {
@@ -365,7 +350,7 @@
         margin-top: 96px;
 
         &-heading {
-            font-size: var(--fz-32);
+            font-size: var(--fz-30);
         }
 
         &-wrapper {
@@ -443,15 +428,16 @@
         }
 
         &-desc {
-            &__content {
-                gap: 30px;
-            }
+            // padding: auto 15px;
+            // &__content {
+            //     gap: 30px;
+            // }
             &__title {
-                font-size: 24px;
+                font-size: var(--fz-18);
             }
 
             &__price {
-                font-size: var(--fz-16);
+                font-size: var(--fz-14);
             }
 
             &-type {
@@ -498,23 +484,6 @@
                 }
             }
 
-            &__btn {
-                justify-content: start;
-
-                & button {
-                    font-size: var(--fz-12);
-                    font-weight: normal;
-                }
-                width: 100%;
-                &__add {
-                    padding: 10px 30px;
-                }
-
-                &__order {
-                    padding: 10px 35px;
-                }
-            }
-
             &__text {
                 gap: 18px;
                 font-size: var(--fz-12);
@@ -524,21 +493,45 @@
                 }
             }
         }
+
+        .btn {
+            min-width: 120px;
+            min-height: 40px;
+
+            &__text {
+                padding: 0 10px;
+                font-size: var(--fz-12);
+              }
+        }
     }
 
     .product-content {
         &-tab {
+            padding: auto 15px;
             margin-top: 56px;
+            white-space: nowrap;
+            font-size: var(--fz-12);
         }
         &__button {
             font-size: var(--fz-12);
-            margin-left: 24px;
+            margin: auto 12px;
         }
 
         &__detail {
             margin-top: 27px;
             font-size: var(--fz-12);
             line-height: 26px;
+        }
+
+        
+    }
+
+    .entry-content {
+        &__detail {
+            font-size: var(--fz-12);
+        }
+        &__heading {
+            font-size: var(--fz-15);
         }
     }
 
@@ -570,6 +563,8 @@
 
             &__btn {
                 margin-top: 25px;
+                font-size: var(--fz-12);
+
             }
         }
     }

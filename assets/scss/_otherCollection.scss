@@ -26,6 +26,10 @@
         &:last-child {
             margin-right: 0;
         }
+
+        &__img {
+            max-height: 247px;
+        }
         &__title {
             margin: 0 32px;
             position: relative;

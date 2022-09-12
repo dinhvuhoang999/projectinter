@@ -59,7 +59,6 @@
         }
 
         &__btn {
-            padding: 12px;
             margin-top: 55px;
             background: none;
             color: #CB9D37;
@@ -68,14 +67,6 @@
             font-size: var(--fz-16);
             line-height: 18px;
 
-        }
-
-        &__btn:hover {
-            color: var(--color-white);
-            background-color: #CB9D37;
-            border-radius: 99px;
-            
-            transition: all 0.2s;
         }
     }
 }
