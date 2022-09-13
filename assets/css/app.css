@@ -194,6 +194,7 @@ main {
 .product_wrapper {
   margin-right: 115px;
   max-width: 590px;
+  width: 40.903vw;
 }
 .product .mySwiper2 {
   max-width: 590px;
@@ -234,6 +235,7 @@ main {
 }
 .product-desc {
   display: flex;
+  width: 100%;
 }
 .product-desc__content {
   padding-top: 50px;
@@ -438,6 +440,10 @@ main {
   transition: 0.3s;
 }
 
+.container {
+  padding: 0 15px;
+}
+
 .btn + .btn {
   margin-left: 12px;
 }
@@ -519,7 +525,7 @@ main {
   width: calc((100% - 15px) / 2);
   padding: 47px 0;
   position: relative;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -553,7 +559,7 @@ main {
 .accessories-card__btn {
   margin-top: 55px;
   background: none;
-  color: #CB9D37;
+  color: #cb9d37;
   font-family: "Poppins", sans-serif;
   font-weight: var(--fw-600);
   font-size: var(--fz-16);
@@ -618,14 +624,9 @@ main {
   position: fixed;
   cursor: pointer;
 }
-
 .contact__floating div:nth-child(2) {
   color: #357fff;
   background-color: var(--color-white);
-}
-
-.contact__floating div:nth-child(3) {
-  color: var(--color-1);
 }
 
 .contact__link:not(:last-child) {
@@ -639,7 +640,6 @@ main {
   border-radius: 32px;
   font-size: 20px;
 }
-
 .contact__link:last-child {
   display: flex;
   flex-direction: column;
@@ -652,7 +652,6 @@ main {
 #btnScroll {
   display: none;
 }
-
 #btnScroll:hover {
   background-color: var(--color-2);
   color: var(--color-white);
@@ -667,6 +666,7 @@ main {
   transition: visibility 0.5s ease 0s;
   width: 100px;
   z-index: 200000 !important;
+  top: initial !important;
 }
 
 .suntory-alo-ph-circle {
@@ -684,7 +684,6 @@ main {
   transition: all 0.5s ease 0s;
   width: 100px;
 }
-
 .suntory-alo-ph-circle-fill {
   animation: 2.3s ease-in-out 0s normal none infinite running suntory-alo-circle-fill-anim;
   border: 2px solid transparent;
@@ -812,7 +811,7 @@ main {
     transform: rotate(0deg) scale(0.7) skew(1deg);
   }
 }
-.suntory-alo-ph-img-circle i {
+.suntory-alo-ph-img-circle em {
   animation: 1s ease-in-out 0s normal none infinite running suntory-alo-circle-img-anim;
   font-size: 25px;
   line-height: 50px;
@@ -862,10 +861,7 @@ main {
   justify-content: center;
 }
 .footer-header__item {
-  margin-left: 32px;
-}
-.footer-header__item :first-child {
-  margin-left: 0;
+  margin: 0 16px;
 }
 .footer-header__item:first-child {
   margin-left: 0;
@@ -930,9 +926,68 @@ main {
   opacity: 0.5;
 }
 
+.modal {
+  padding: 0 15px;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 32px;
+  background-color: var(--color-white);
+  width: 586px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  text-align: center;
+}
+.modal-content__title {
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-weight: var(--fw-700);
+  color: var(--color-2);
+  line-height: 32px;
+  letter-spacing: 0.025em;
+}
+.modal-content__text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  font-size: var(--fz-15);
+}
+.modal-content__text span {
+  font-weight: var(--fw-700);
+}
+
+.btn-default {
+  width: 100%;
+  min-height: 38px;
+  border-radius: 99px;
+  background: linear-gradient(86.15deg, #957327 0%, #dfc47a 100%);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fz-14);
+  font-weight: var(--fz-600);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1280px) {
   .header-nav-list {
-    gap: 30px;
+    gap: 28px;
   }
   .header .line {
     width: 1px;
@@ -949,13 +1004,8 @@ main {
   .product_wrapper {
     margin-right: 80px;
   }
-  .product .mySwiper2 {
-    max-width: 550px;
-    max-height: 550px;
-  }
   .product .btn {
     min-width: 180px;
-    min-height: 48px;
   }
   .product .btn__text {
     padding: 0 10px;
@@ -973,12 +1023,7 @@ main {
     margin: 0 auto;
   }
   .product_wrapper {
-    max-width: 500px;
     margin-right: 80px;
-  }
-  .product .mySwiper2 {
-    max-width: 500px;
-    max-height: 500px;
   }
   .product-desc__title {
     font-size: var(--fz-32);
@@ -1027,6 +1072,8 @@ main {
     height: 60px;
     width: 100px;
     top: 20px;
+    display: flex;
+    align-items: center;
     left: 0;
     z-index: 1000;
     cursor: pointer;
@@ -1104,19 +1151,32 @@ main {
     display: block;
     background-color: #00344c;
   }
+  .active {
+    right: 0;
+    overflow: visible;
+    transition: 0.6s;
+  }
   .product {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .product_wrapper {
-    max-width: 589px;
-    width: 100%;
+    width: 100% !important;
     margin: 0;
+    max-width: none;
   }
   .product .mySwiper2 {
-    max-width: 589px;
-    width: 100%;
-    max-height: 589px;
+    max-width: none !important;
+    width: 100% !important;
+    max-height: none;
+  }
+  .product .mySwiper {
+    max-width: none !important;
+    padding: 0 10px;
+  }
+  .product .btn {
+    min-width: 200px;
   }
   .contact__link {
     padding: 18px;
@@ -1145,6 +1205,9 @@ main {
   }
 }
 @media screen and (max-width: 768px) {
+  .header-nav__item ::before {
+    display: none;
+  }
   .product-desc__title {
     font-size: 30px;
   }
@@ -1217,13 +1280,6 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
-  .product_wrapper {
-    max-width: 500px;
-  }
-  .product .mySwiper2 {
-    max-width: 500px;
-    max-height: 500px;
-  }
   .product .swiper-button-next::after {
     left: 30px;
   }
@@ -1306,6 +1362,9 @@ main {
   }
   .entry-content__detail {
     font-size: var(--fz-12);
+  }
+  .entry-content__list {
+    margin-bottom: 30px;
   }
   .entry-content__heading {
     font-size: var(--fz-15);

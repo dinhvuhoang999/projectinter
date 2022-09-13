@@ -7,6 +7,7 @@ window.onscroll = function () {
     logo[0].classList.add('logo-scroll')
     scroll[0].classList.add('scroll', 'bowshadow')
   }
+
   else {
     logo[0].classList.remove('logo-scroll')
     scroll[0].classList.remove('scroll', 'bowshadow')
@@ -19,7 +20,9 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById("btnScroll").style.display = "flex";
-  } else {
+  }
+
+  else {
     document.getElementById("btnScroll").style.display = "none";
   }
 }
@@ -45,6 +48,7 @@ let swiper2 = new Swiper(".mySwiper2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  
   thumbs: {
     swiper: swiper,
   },
@@ -75,6 +79,18 @@ function increment() {
 
 function decrement() {
   document.getElementById('demoInput').stepDown();
+}
+
+// Check quantity 
+const checkQuantity = () => {
+  let x = document.getElementById("demoInput").value;
+  if (x > 2) {
+    document.getElementById('myModal').style.display = "flex"
+  }
+}
+
+const closeModal = () => {
+  document.getElementById("myModal").style.display = "none";
 }
 
 

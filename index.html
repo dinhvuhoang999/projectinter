@@ -171,7 +171,7 @@
                         <div class="product-desc__mid">
                             <div class="product-desc__quantity">
                                 <span>Quantity</span>
-                                <div class="product-desc-count__input_group">
+                                <div  class="product-desc-count__input_group">
                                     <button type="button" onclick="decrement()" class="button-minus">-</button>
 
                                     <input id="demoInput" type=number value="01" min=01 max=100>
@@ -181,12 +181,12 @@
                             </div>
 
                             <div class="product-desc__btn">
-                                <button class="btn btn--outline">
+                                <button type="button" onclick="checkQuantity()" class="btn btn--outline">
                                     <span class="btn__overlay"></span>
                                     <span class="btn__text">Add to cart</span>
                                 </button>
 
-                                <button class="btn ">
+                                <button type="button" onclick="checkQuantity()" class="btn">
                                     <span class="btn__overlay"></span>
                                     <span class="btn__text">Order Now</span>
                                 </button>
@@ -238,6 +238,7 @@
                             </p>
 
                             <p style="margin: 24px 0;">The refund is FREE</p>
+                     
 
                             <p>Refund conditions:</p>
 
@@ -373,7 +374,6 @@
 
 
             <!-- Collections -->
-
             <section class="collection">
                 <div class="container">
                     <div class="collection-heading">
@@ -404,24 +404,21 @@
                 </div>
             </section>
 
+            <!-- Contact -->
             <section class="contact__floating">
                 <div class="contact__link" onclick="topFunction()" id="btnScroll">
                     <em class="fa-sharp fa-solid fa-chevron-up"></em>
                 </div>
 
                 <div class="contact__link">
-                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <em class="fa-brands fa-facebook-messenger"></em>
                 </div>
-
-                <!-- <div class="contact__link">
-                    <i class="fa-solid fa-phone"></i>
-                </div> -->
 
                 <div class="contact__link">
                     <a href="tel:" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" >
                         <div class="suntory-alo-ph-circle"></div>
                         <div class="suntory-alo-ph-circle-fill"></div>
-                        <div class="suntory-alo-ph-img-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div class="suntory-alo-ph-img-circle"><em class="fa-solid fa-phone"></em></div>
                     </a>
                 </div>
             </section>
@@ -487,6 +484,16 @@
             </div>
         </footer>
 
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h3 class="modal-content__title">Exceeding the amount</h3>
+                <p class="modal-content__text">The maximum quantity of <span>XOR Titanium </span> products that can be purchased is
+                    <span>2</span> products/order.
+                </p>
+                <button type="button" onclick="closeModal()" class="btn-default">Agree</button>
+            </div>
+
+        </div>
 
     </div>
 
